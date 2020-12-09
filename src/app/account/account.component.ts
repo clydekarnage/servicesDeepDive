@@ -6,7 +6,7 @@ import { LoggingService } from './../logging.service';
   selector: 'app-account',
   templateUrl: './account.component.html',
   styleUrls: ['./account.component.css'],
-  providers: [LoggingService]
+  // providers: [LoggingService]
 })
 export class AccountComponent {
   @Input()
@@ -22,6 +22,6 @@ export class AccountComponent {
   // tslint:disable-next-line:typedef
   onSetTo(status: string) {
     this.accountService.updateStatus(this.id, status);
-    this.loggingService.logStatusChange(status);
+    // this.loggingService.logStatusChange(status);
   }
 }

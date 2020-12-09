@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   selector: 'app-new-account',
   templateUrl: './new-account.component.html',
   styleUrls: ['./new-account.component.css'],
-  providers: [LoggingService]
+  // providers: [LoggingService]
 })
 export class NewAccountComponent {
 
@@ -18,6 +18,6 @@ export class NewAccountComponent {
   // tslint:disable-next-line:typedef
   onCreateAccount(accountName: string, accountStatus: string) {
     this.accountService.addAccount(accountName, accountStatus);
-    this.loggingService.logStatusChange(accountStatus);
+    // this.loggingService.logStatusChange(accountStatus);
   }
 }
